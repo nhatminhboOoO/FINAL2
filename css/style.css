@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+ @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #EFEEEE;
+	margin: 0}
+.logo{
+	padding-top: 20px
+}
+.menu ul{
+	padding: 0;margin: 0;list-style: none;display: flex
+}
+.menu{
+	padding: 10px
+}
+.menu ul li a{
+	padding: 10px 30px;text-decoration: none;color: #666666;border-radius: 20px; font-weight: 500;font-size: 18px; display: block
+}
+.menu ul li a:hover{
+	background-color: darkred;color: white
+}
+
+/*phan submenu*/
+.menu ul li{
+	position: relative;
+}
+
+.menu ul li .submenu{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: rgba(0,0,0,0.60);
+	opacity: 0;
+	box-shadow: 5px 5px 5px gray;
+	z-index: 100
+}
+
+.menu ul li .submenu li{
+	border-bottom: 1px solid white
+}
+.banner{
+	width: 100%;
+	min-height: 200px;
+}
+
+#slider .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+#slider .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+}
+
+#slider .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slider .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+}
+
+#slider .owl-nav .owl-next{ position:absolute; right:5%;}
+#slider .owl-nav .owl-prev{ position:absolute; left:5%;}
+#slider .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:#528CF3;
+      text-decoration: none; }
+main{
+	width: 100%; 
+	min-height: 600px;
+	
+}
+.pt-30{
+	padding-top: 30px
+}
+.text-do{
+	color: darkred
+}
+.vien{
+	border: 1px solid darkred;
+	padding: 15px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden
+}
+.icon{
+	position: absolute;
+	width: 80%;
+	height: 40px;
+	left: 10%;
+	top: -12%;
+	display: flex;
+	justify-content:space-around;
+	transition: all 1s
+}
+.icon a{
+	height: 40px;
+	width: 40px;
+	background-color: #BABABA;
+	border-radius: 50%;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: darkred
+}
+.icon a:hover{
+	background-color: darkred; color: white
+}
+.vien:hover .icon{
+	top:40%
+}
+.text-den{
+	color: #252525
+}
+
+.background2{
+	width: 100%;
+min-height: 700px;
+position: relative;
+}
+
+.caption{
+	position: absolute;
+	text-align: center;
+	width: 20%;
+	border: 1px solid white;
+	top: 70%;
+	font-size: 15px;
+}
+.caption h1{
+	font-size: 18px;
+	color: red
+}
+.caption p{
+	color: red}
+.vien-trang{
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #FFFFFF;
+}
+#feature{
+	width: 100%;
+	min-height: 600px;
+	background: url("../images/bg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom
+}
+.gach-chan{
+	border-bottom: 3px solid darkred
+}
+.vien-trang {
+	text-decoration: none;padding: 20px; text-align: center; border: 1px solid #FFFFFF
+}
+.vien-trang a{
+	text-decoration: none; color: darkred
+}
+#contact{
+	width: 100%; 
+	min-height: 500px;
+	background: url("../images/Banner2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center
+}
+.shadow{
+	width: 100%;
+	min-height: 300px;
+	border: 1px solid #bdbdbd;
+	box-shadow: 5px 5px 5px gray;
+	padding: 30px;
+	
+}
+.form-control{
+	padding: 8px;
+	width: 100%;
+	margin-bottom: 10px
+}
